@@ -1,0 +1,37 @@
+difference between if and switch in js?
+
+// Using if statement
+let num = 2;
+if (num === 1) {
+    console.log("One");
+} else if (num === 2) {
+    console.log("Two");
+} else {
+    console.log("Other");
+}
+
+// Using switch statement
+let fruit = "apple";
+switch (fruit) {
+    case "banana":
+        console.log("Banana");
+        break;
+    case "apple":
+        console.log("Apple");
+        // no break, so it falls through to the next case
+    case "orange":
+        console.log("Orange");
+        break;
+    default:
+        console.log("Unknown fruit");
+}
+
+In this example, the if statement checks for the value of num and executes the corresponding block of code.
+ The switch statement checks for the value of fruit and executes the corresponding case. If fruit is "apple",
+ it also executes the code for "Orange" because there is no break statement after "Apple".
+
+
+
+
+
+
